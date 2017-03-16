@@ -1,0 +1,15 @@
+<?xml version="1.0"?>   
+<layout version="0.1.0">   
+  <reviews_index_index>   
+    <reference name="root">   
+      <action method="setTemplate"><template>page/1column.phtml</template></action>   
+    </reference>   
+    <reference name="content">   
+      <block type="reviews/index" name="reviews_index" template="reviews/index.phtml"/>   
+    </reference>
+    <reference name="head">
+       <action method="addItem"><type>skin_js</type><name>js/reviews/reviews.js</name></action>
+       <action method="addItem"><type>skin_css</type><name>css/reviews/reviewmycompany.css</name></action>
+    </reference>    
+  </reviews_index_index>  
+ </layout>   

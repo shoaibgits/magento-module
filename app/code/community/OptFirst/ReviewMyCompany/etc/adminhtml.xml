@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <optfirst translate="title" module="optfirst_reviewmycompany">
+            <title>Review My Company</title>
+            <sort_order>90</sort_order>
+            <children>
+                <form translate="title" module="optfirst_reviewmycompany">
+                    <title>Form</title>
+                    <sort_order>10</sort_order>
+                    <action>adminhtml/adminform</action>
+                </form>
+                  <items module="optfirst_reviewmycompany">
+                        <title>Manage Social Icons</title>
+                        <sort_order>0</sort_order>
+                    <action>adminhtml/review/index</action>
+                    </items>
+            </children>
+        </optfirst>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <optfirst>
+                        <title>Optfirst</title>
+                        <sort_order>90</sort_order>
+                        <children>
+                            <form>
+                                <title>Form</title>
+                                <sort_order>10</sort_order>
+                            </form>
+                        </children>
+                    </optfirst>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
